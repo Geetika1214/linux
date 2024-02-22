@@ -1,0 +1,31 @@
+echo "Enter number 1"
+read a;
+echo " Enter number 2"
+read b;
+echo "1 for Addition,
+      2 for Subtraction,
+      3 for MUltiplication
+      4 for Division"
+      
+    read op;
+    case $op in
+    1)
+    c=$(expr $a + $b)
+    echo "Addition of the numbers is:"$c
+         ;;
+    2)
+    c=$(expr $a - $b)
+    echo "Subtraction of the numbers is:"$c
+         ;; 
+    3)
+    c=$(expr $a \* $b)
+    echo "Multiplication of the numbers is:"$c
+         ;;  
+    4)
+    c=$(expr $a / $b)
+    echo "Division of the numbers is:"$c
+         ;;
+    *)
+    echo "No operation is chosen"
+    esac
+      
